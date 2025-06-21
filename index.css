@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Ubuntu, sans-serif; 
+  font-style: italic;
+}
+.container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: WHITE;
+  border-radius: 10px 0px 10px 0px;
+}
+.login input { 
+ font-family: Ubuntu Sans Mono,monospace;
+    
+    
+
+}
