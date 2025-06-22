@@ -1,34 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap");
-      @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
-      
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>login</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
 
-      <div class="login">
-        <p>login</p>
-        <div class="button"></div>
-        <input type="email" name="" id="" placeholder="insira seu email" />
-      </div>
-      <div class="senha">
-        <p>senha</p>
-        <input type="password" name="" id="" placeholder="insira sua senha" />
-      </div>
-      <p>esqueceu sua senha?</p>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      font-family: 'Ubuntu Sans Mono', monospace;
+    }
 
-      <div class="button">
-        <button>Entrar</button>
-      </div>
+    #web-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      display: block;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="web-bg"></canvas>
+
+  <div class="container">
+    <h1>Login</h1>
+
+    <div class="login">
+      <p>Login</p>
+      <input type="email" placeholder="Insira seu email" />
     </div>
-  </body>
+
+    <div class="senha">
+      <p>Senha</p>
+      <input type="password" placeholder="Insira sua senha" />
+      <input type="hidden" id="observar" />
+    </div>
+
+    <p><a href="#">Esqueceu sua senha?</a></p>
+
+    <div class="button">
+      <button>Entrar</button>
+    </div>
+  </div>
+
+  <!-- Link para seu script externo -->
+  <script src="teia.js"></script>
+</body>
 </html>
